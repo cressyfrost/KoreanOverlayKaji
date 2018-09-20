@@ -105,9 +105,9 @@ function init()
   "<div class=\"pause\"></div>"+
   "<div class=\"duration\">00:00</div>"+
   "<div class=\"title\">---</div>"+
-  "<div class=\"datacov\"><div class=\"rdps\">0 rDPS</div>"+
+  "<div class=\"datacov\"><div class=\"rdps\">0 Raid DPS</div>"+
   "<div class=\"rhps\">0 rHPS</div>"+
-  "<div class=\"rdamage\">0 rDmg</div>"+
+  "<div class=\"rdamage\">0 Raid DMG</div>"+
   "<div class=\"rhealed\">0 rHeal</div></div>"+
   "<div class=\"icons\">"+
   "<div class=\"icon xdisabled\" onmouseover=\"$('.tooltip').show(); $('.tooltip').css({'right':'0px', 'left':'auto', 'top':'25px'}); $('.tooltip').html('<div>Personal Mode</div><div>Displays only your own statistics.</div>');\" onmouseleave=\"$('.tooltip').hide();\" style=\"background:url(img/personal-mode.png) no-repeat center center; background-size:90% auto;\" data-checked=\"false\" id=\"othershide\" onclick=\"hideOthers();\"></div>"+
@@ -264,11 +264,12 @@ function encounterAct(e, n)
     "Demi-Bahamut":"SMN"
   }
 
-  $("header .title").html(e.detail.Encounter.title=="Encounter"?"[Parsing]":e.detail.Encounter.title);
+  $("header .title").html(e.detail.Encounter.title=="Encounter"?"":e.detail.Encounter.title);
   $("header .duration").html(e.detail.Encounter.duration);
-  $("header .rdps").html(parseFloatLocalized(e.detail.Encounter.encdps).toFixedLocalized(0)+" rDPS");
+  // $("header .rdps").html(parseFloatLocalized(e.detail.Encounter.encdps).toFixedLocalized(0)+" rDPS");
+  $("header .rdps").html(parseIntLocalized(e.detail.Encounter.encdps).toLocaleString()+" Raid DPS");
   $("header .rhps").html(parseFloatLocalized(e.detail.Encounter.enchps).toFixedLocalized(0)+ " rHPS");
-  $("header .rdamage").html(parseIntLocalized(e.detail.Encounter.damage).toLocaleString()+" rDmg");
+  $("header .rdamage").html(parseIntLocalized(e.detail.Encounter.damage).toLocaleString()+" Raid DMG");
   $("header .rhealed").html(parseIntLocalized(e.detail.Encounter.healed).toLocaleString()+ " rHeal");
 
   for(var user in e.detail.Combatant)

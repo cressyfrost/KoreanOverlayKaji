@@ -1,5 +1,5 @@
-html{margin:0px; padding:0px; position:fixed; left:0px; top:0px; right:0px; bottom:0px; border-radius:5px; box-shadow:inset 0px 0px 0px rgba(0,0,0,.25); transform-origin: left top;}
-body{margin:0px auto 0px 0px; font-family:'맑은 고딕'; position:absolute; left:5px; right:5px; top:5px; bottom:5px; overflow:hidden; -webkit-user-select: none; user-select: none; }
+html{ margin:0px; padding:0px; position:fixed; left:0px; top:0px; right:0px; bottom:0px; border-radius:5px; box-shadow:inset 0px 0px 0px rgba(0,0,0,.25); transform-origin: left top;}
+body{ margin:0px auto 0px 0px; font-family:'맑은 고딕'; position:absolute; left:5px; right:5px; top:5px; bottom:5px; overflow:hidden; -webkit-user-select: none; user-select: none; }
 
 ::-webkit-scrollbar
 {
@@ -154,7 +154,7 @@ header .icon
 	border-radius:12px;
 	border:2px solid #FFF;
 	float:right;
-	margin-left:3px;
+	margin-left:0px;
 	background-color:rgba(0,0,0,0.25) !important;
 	transition:.5s;
 }
@@ -237,6 +237,7 @@ header .duration:before{content:'[';}
 	left:-5px;
 	right:-5px;
 	overflow:auto;
+	height: 195px;
 }
 
 @keyframes loadingrotate
@@ -447,7 +448,7 @@ input[type=button]
 {
 	display: block;
 	overflow: hidden;
-	transition: .2s;
+	transition: .4s;
 	transition-timing-function: linear;
 	word-break: break-all;
 }
@@ -455,7 +456,7 @@ input[type=button]
 .content>.item b
 {
 	left:28px;
-	top:2px;
+	top:1px;
 	position:absolute;
 	z-index:99;
 	color:#EEE;
@@ -479,7 +480,7 @@ input[type=button]
 	border-radius:18px;
 	height:20px;
 	width:20px;
-	border:2px solid #FFF;
+	border:1px solid #fff;
 	background:rgba(0,0,0,0.25);
 	background-repeat:no-repeat;
 	background-size:auto 20px;
