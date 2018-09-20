@@ -264,7 +264,7 @@ function encounterAct(e, n)
     "Demi-Bahamut":"SMN"
   }
 
-  $("header .title").html(e.detail.Encounter.title=="Encounter"?"Parsing":e.detail.Encounter.title);
+  $("header .title").html(e.detail.Encounter.title=="Encounter"?"[Parsing]":e.detail.Encounter.title);
   $("header .duration").html(e.detail.Encounter.duration);
   $("header .rdps").html(parseFloatLocalized(e.detail.Encounter.encdps).toFixedLocalized(0)+" rDPS");
   $("header .rhps").html(parseFloatLocalized(e.detail.Encounter.enchps).toFixedLocalized(0)+ " rHPS");
@@ -532,7 +532,7 @@ function mergeCombatantDetail(original, target, e, mergeUnmergedStats)
   original.OverHealPct = Math.round( calcPercentage( (parseIntLocalized(original.healed) * original.OverHealPct / 100) + (parseIntLocalized(target.healed) * target.OverHealPct / 100), parseIntLocalized(original.healed) + parseIntLocalized(target.healed) ) );
 
   original.swings += target.swings;
-  original.encdps = (parseFloatLocalized(original.encdps) + parseFloatLocalized(target.encdps)).toFixedLocalized(0);
+  original.encdps = (parseIntLocalized(original.encdps) + parseIntLocalized(target.encdps)).toLocaleString();
   original.damage = (parseIntLocalized(original.damage) + parseIntLocalized(target.damage)).toLocaleString();
   original['damage%'] = calcPercentage(parseIntLocalized(original.damage), parseIntLocalized(e.detail.Encounter.damage)).toFixedLocalized(1);
   original.heals += target.heals;
