@@ -35,24 +35,24 @@ var initialNameTabs = ["DPS"];
 /* Tab and sort column settings: */
 var sortObject = 
 {
-  "Overview":
-  {
-    "encdps":{label:"DPS", width:52, display:true},
-    "damage%":{label:"DMG %", display:false},
-    "crithit%":{label:"Crit %", width:36,display:true},
-    "DirectHitPct":{label:"DH %", width:36,display:true},
-    "CritDirectHitPct":{label:"! ! %", width:36,display:false},
-    "maxhit":{label:"Max Hit", width:160, display:false},
-    "maxhitNoText":{label:"Max Hit", width:60, display:true},
-    "kills":{label:"Kills", display:false},
-    "enchps":{label:"HPS", width:45, display:false},
-    "critheal%":{label:"Crit H. %", display:false},
-    "OverHealPct":{label:"Over %", display:false},
-    "heals":{label:"Heals", display:false},
-    "encdtps":{label:"DTPS", width:42, display:false},
-    "deaths":{label:"Deaths", width:34,display:true},
-    "duration":{label:"DUR", display:false},
-  },
+  // "Overview":
+  // {
+  //   "encdps":{label:"DPS", width:52, display:true},
+  //   "damage%":{label:"DMG %", display:false},
+  //   "crithit%":{label:"Crit %", width:36,display:true},
+  //   "DirectHitPct":{label:"DH %", width:36,display:true},
+  //   "CritDirectHitPct":{label:"! ! %", width:36,display:false},
+  //   "maxhit":{label:"Max Hit", width:160, display:false},
+  //   "maxhitNoText":{label:"Max Hit", width:60, display:true},
+  //   "kills":{label:"Kills", display:false},
+  //   "enchps":{label:"HPS", width:45, display:false},
+  //   "critheal%":{label:"Crit H. %", display:false},
+  //   "OverHealPct":{label:"Over %", display:false},
+  //   "heals":{label:"Heals", display:false},
+  //   "encdtps":{label:"DTPS", width:42, display:false},
+  //   "deaths":{label:"Deaths", width:34,display:true},
+  //   "duration":{label:"DUR", display:false},
+  // },
   "DPS":
   {
     "encdps":{label:"DPS", width:40, display:true},
