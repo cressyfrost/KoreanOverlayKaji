@@ -73,7 +73,7 @@
 
 .item[data-job=FSH]>.leftdeco::after{border-color:rgba(0,0,0,0.25);}
 
-.item[data-job=GLA]>.leftdeco::after{border-color:rgba(60, 60, 170, 1);}
+.item[data-job=GLA]>.leftdeco::after{border-color:rgba(168, 210, 230, 1);}
 .item[data-job=GSM]>.leftdeco::after{border-color:rgba(0,0,0,0.25);}
 
 .item[data-job=LMB]>.leftdeco::after{border-color:rgba(255,192,0, 1);}
