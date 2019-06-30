@@ -15,13 +15,16 @@
 .item[data-job=CRP]>.datas{}
 .item[data-job=CUL]>.datas{}
 
+.item[data-job=DNC]>.datas{}
 .item[data-job=DRG]>.datas{}
 .item[data-job=DRK]>.datas{}
 
 .item[data-job=FSH]>.datas{}
 
 .item[data-job=GLA]>.datas{}
+.item[data-job=GNB]>.datas{}
 .item[data-job=GSM]>.datas{}
+
 
 .item[data-job=LMB]>.datas{}
 .item[data-job=LNC]>.datas{}
@@ -69,11 +72,13 @@
 .item[data-job=CUL]>.leftdeco::after{border-color:rgba(0,0,0,0.25);}
 
 .item[data-job=DRG]>.leftdeco::after{border-color:rgba(65, 100, 205, 1);}
+.item[data-job=DNC]>.leftdeco::after{border-color:rgba(255,20,147, 1);}
 .item[data-job=DRK]>.leftdeco::after{border-color:rgba(209, 38, 204, 1);}
 
 .item[data-job=FSH]>.leftdeco::after{border-color:rgba(0,0,0,0.25);}
 
 .item[data-job=GLA]>.leftdeco::after{border-color:rgba(168, 210, 230, 1);}
+.item[data-job=GNB]>.leftdeco::after{border-color:rgba(0,255,50, 1);}
 .item[data-job=GSM]>.leftdeco::after{border-color:rgba(0,0,0,0.25);}
 
 .item[data-job=LMB]>.leftdeco::after{border-color:rgba(255,192,0, 1);}
@@ -122,12 +127,14 @@
 .item[data-job=CRP]>.icon{background-image:url(../icon/CRP.png);}
 .item[data-job=CUL]>.icon{background-image:url(../icon/CUL.png);}
 
+.item[data-job=DNC]>.icon{background-image:url(../icon/CUL.png); background-color:rgba(65, 100, 205,0.5);}
 .item[data-job=DRG]>.icon{background-image:url(../icon/DRG.png); background-color:rgba(65, 100, 205,0.5);}
 .item[data-job=DRK]>.icon{background-image:url(../icon/DRK.png); background-color:rgba(209, 38, 204,0.5);}
 
 .item[data-job=FSH]>.icon{background-image:url(../icon/FSH.png);}
 
 .item[data-job=GLA]>.icon{background-image:url(../icon/GLA.png); background-color:rgba(168, 210, 230,0.5);}
+.item[data-job=GNB]>.icon{background-image:url(../icon/GSM.png); background-color:rgba(168, 210, 230,0.5);}
 .item[data-job=GSM]>.icon{background-image:url(../icon/GSM.png);}
 
 .item[data-job=LMB]>.icon{background-image:url(../icon/LMB.png);}
@@ -163,7 +170,9 @@
 .item[data-job=BRD]>.datas>.bar, .item[data-job=ARC]>.datas>.bar	{background:rgb(145, 186, 94); color:#FA8;}
 .item[data-job=CBO]>.datas>.bar						{background:rgb(255,192,0); color:#FF0;}
 .item[data-job=DRG]>.datas>.bar, .item[data-job=LNC]>.datas>.bar	{background:rgb(65, 100, 205); color:#FA8;}
+.item[data-job=DNC]>.datas>.bar						{background:rgb(255,20,147);}
 .item[data-job=DRK]>.datas>.bar						{background:rgb(209, 38, 204);}
+.item[data-job=GNB]>.datas>.bar						{background:rgb(0,255,50);}
 .item[data-job=LMB]>.datas>.bar						{background:rgb(255,192,0); color:#FF0;}
 .item[data-job=MCH]>.datas>.bar						{background:rgb(110, 225, 214); color:#FA8;}
 .item[data-job=MNK]>.datas>.bar, .item[data-job=PGL]>.datas>.bar	{background:rgb(214, 156, 0); color:#FA8;}
@@ -181,8 +190,10 @@
 .item[data-job=BLM]>.datas>.bar::before, .item[data-job=THM]>.datas>.bar::before	{border-color:transparent transparent transparent rgb(165, 121, 214);}
 .item[data-job=BRD]>.datas>.bar::before, .item[data-job=ARC]>.datas>.bar::before	{border-color:transparent transparent transparent rgb(145, 186, 94);}
 .item[data-job=CBO]>.datas>.bar::before							{border-color:transparent transparent transparent rgb(255,192,0);}
+.item[data-job=DNC]>.datas>.bar::before							{border-color:transparent transparent transparent rgb(255,20,147);}
 .item[data-job=DRG]>.datas>.bar::before, .item[data-job=LNC]>.datas>.bar::before	{border-color:transparent transparent transparent rgb(65, 100, 205);}
 .item[data-job=DRK]>.datas>.bar::before							{border-color:transparent transparent transparent rgb(209, 38, 204);}
+.item[data-job=GNB]>.datas>.bar::before							{border-color:transparent transparent transparent rgb(0,255,50);}
 .item[data-job=LMB]>.datas>.bar::before							{border-color:transparent transparent transparent rgb(255,192,0);}
 .item[data-job=MCH]>.datas>.bar::before							{border-color:transparent transparent transparent rgb(110, 225, 214);}
 .item[data-job=MNK]>.datas>.bar::before, .item[data-job=PGL]>.datas>.bar::before	{border-color:transparent transparent transparent rgb(214, 156, 0);}
